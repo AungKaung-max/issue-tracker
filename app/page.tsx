@@ -1,11 +1,10 @@
-import Pagination from "./components/Pagination";
+import React from 'react'
+import LatestIssues from './LatestIssues'
 
-export default function Home({
-  searchParams,
-}: {
-  searchParams: { page: string };
-}) {
+const Home = () => {
   return (
-      <div></div>
-  );
+    <LatestIssues></LatestIssues>
+  )
 }
+
+export default Home
