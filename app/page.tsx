@@ -16,9 +16,6 @@ const Home = async () => {
     where: { status: "IN_PROGRESS" },
   });
   return (
-<<<<<<< HEAD
-   <div></div>
-=======
     <Grid columns={{ initial: "1", md: "2" }} gap="5">
       <Flex direction="column" gap="5" >
         <IssueSummary
@@ -34,7 +31,6 @@ const Home = async () => {
       </Flex>
       <LatestIssues></LatestIssues>
     </Grid>
->>>>>>> ISSUE-001
   );
 };
 
