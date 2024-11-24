@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-      <div>Hello Welcome To Issue Tracker</div>
+      <div>Hel Welcome To Issue Tracker</div>
   );
 }
