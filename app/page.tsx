@@ -1,7 +1,8 @@
+import Pagination from "./components/Pagination";
 
 
 export default function Home() {
   return (
-      <div>Hel Welcome To Issue Tracker</div>
+      <Pagination itemCount={100} pageSize={10} currentPage={1}></Pagination>
   );
 }
