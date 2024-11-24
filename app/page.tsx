@@ -1,8 +1,7 @@
-import Pagination from "./components/Pagination";
 
 
 export default function Home() {
   return (
-     <div>hello</div>
+      <div>Hel Welcome To Issue Tracker</div>
   );
 }
