@@ -1,14 +1,13 @@
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import type { Metadata } from "next";
-import { Inter, Style_Script } from "next/font/google";
-import "./globals.css";
-import Navbar from "./Navbar";
-import "./theme-config.css";
+import { Inter } from "next/font/google";
 import AuthProvider from "./auth/Provider";
 import Container from "./components/Container";
+import "./globals.css";
+import Navbar from "./Navbar";
 import QueryClientProvider from "./QueryClient";
-import Script from "next/script";
+import "./theme-config.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,24 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-8LZKXM5VQ3"
-          strategy="afterInteractive"
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-8LZKXM5VQ3');
-            `,
-          }}
-        />
-      </head>
       <body className={inter.variable}>
         <AuthProvider>
           <QueryClientProvider>
